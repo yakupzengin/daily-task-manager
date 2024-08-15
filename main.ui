@@ -29,8 +29,17 @@
       <height>321</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">font:10pt;</string>
+    </property>
+    <property name="navigationBarVisible">
+     <bool>true</bool>
+    </property>
+    <property name="dateEditEnabled">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QListWidget" name="tasksListWidget">
@@ -46,10 +55,16 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">font:12pt;</string>
+     <string notr="true">font:12pt;
+</string>
     </property>
+    <item>
+     <property name="text">
+      <string>dqwdwqdq</string>
+     </property>
+    </item>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="saveButton">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -59,7 +74,7 @@
      </rect>
     </property>
     <property name="cursor">
-     <cursorShape>OpenHandCursor</cursorShape>
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="mouseTracking">
      <bool>false</bool>
@@ -78,14 +93,17 @@ color: rgb(8, 8, 8);</string>
      <string>Save Changes</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>100</y>
+      <y>102</y>
       <width>101</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;
@@ -98,13 +116,13 @@ color: rgb(8, 8, 8);
 background-color: rgb(64, 140, 255);</string>
     </property>
     <property name="text">
-     <string>Add new</string>
+     <string>Add task</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-10</x>
       <y>0</y>
       <width>881</width>
       <height>81</height>
@@ -126,6 +144,30 @@ color: rgb(8, 8, 8);</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="taskLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>110</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(64, 140, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Add new task</string>
     </property>
    </widget>
   </widget>
